@@ -10,7 +10,7 @@ int main() {
 	float vodka=10;
 	float tablecloth=2.6;
 	float sum;
-	sum=2*snickers+2*hamburger+2*cola+0.5*panda+0.2*roshen+4*javel+4*bread+2*vodka+3.5*tablecloth;
-	std::cout <<sum;
-	return 0;
+		sum=2*snickers+2*hamburger+2*cola+0.5*panda+0.2*roshen+4*javel+4*bread+2*vodka+3.5*tablecloth;
+		std::cout << sum;
+return 0;
 }
