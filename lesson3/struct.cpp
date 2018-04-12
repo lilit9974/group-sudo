@@ -13,17 +13,17 @@ int main() {
         };
 	Person massiv[13];
         massiv[0] = {"Lilit", "Melkumian", 19, "female", "student", 48.5, "unmarried", "Miss"};
-        massiv[1] = {"Hrach", "Gevorgian", 21, "male", "student", 69.2, "unmarried", "Mrs"};
-        massiv[2] = {"Armen", "Abrahamian", 20, "male", "student", 70, "unmarried", "Mrs"};
+        massiv[1] = {"Hrach", "Gevorgian", 21, "male", "student", 69.2, "unmarried", "Mr"};
+        massiv[2] = {"Armen", "Abrahamian", 20, "male", "student", 70, "unmarried", "Mr"};
         massiv[3] = {"Arpine", "Harutyunian", 23, "female", "student", 49, "unmarried", "Miss"};
         massiv[4] = {"Ani", "Hakobian", 19, "female", "student", 52, "unmarried", "Miss"};
-        massiv[5] = {"Artur", "Gasparian", 25, "male", "not student", 65, "unmarried", "Mrs"};
-        massiv[6] = {"Mikael", "Margarian", 17, "male", "student", 50, "unmarried", "Mrs"};
-        massiv[7] = {"Tigran", "Hovhannisian", 20, "male", "student", 75, "unmarried", "Mrs"};
+        massiv[5] = {"Artur", "Gasparian", 25, "male", "not student", 65, "unmarried", "Mr"};
+        massiv[6] = {"Mikael", "Margarian", 17, "male", "student", 50, "unmarried", "Mr"};
+        massiv[7] = {"Tigran", "Hovhannisian", 20, "male", "student", 75, "unmarried", "Mr"};
         massiv[8] = {"Nvard", "Harutyunian", 19, "female", "student", 52, "unmarried", "Miss"};
         massiv[9] = {"Mariam", "Karapetian", 22, "female", "student", 53, "unmaried", "Miss"};
-        massiv[10] = {"Edgar", "Grigorian", 16, "male", "not student", 58, "unmaried", "Mrs"};
-        massiv[11] = {"Alexandr", "Avagian", 19, "male", "student", 62, "unmaried", "Mrs"};
+        massiv[10] = {"Edgar", "Grigorian", 16, "male", "not student", 58, "unmaried", "Mr"};
+        massiv[11] = {"Alexandr", "Avagian", 19, "male", "student", 62, "unmaried", "Mr"};
         massiv[12] = {"Nonna", "Muselian", 19, "female", "student", 53, "unmaried", "Miss"};
 
         std::cout << "Hello. Welcome to Instigate Mobile. We are very glad to see you in our office. Here is the list of our members." << '\n' <<'\n';
