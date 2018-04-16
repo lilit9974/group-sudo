@@ -1,19 +1,21 @@
 #include <iostream>
 class Stack {
 	private:
-		int top = 0;
-		int *arr = new int[n];
+		int *arr;
 		int size() {
 			return top;
 		}
 	public:
+		int top;
 		unsigned int n;
-//		Stack(int n, int &arr)
-//			:n(n) {
-//			this->arr = new int [n];
-//		}
+		Stack(int n = 10) 
+			:n(n) {
+			top = -1;
+			arr = new int [n];
+		}
+		~Stack() {}
 		void push(int a) {
-			if (a != n) {
+			if (size() != n-1) {
 				arr[top] = a;
 				top++;
 			} else {
@@ -21,14 +23,14 @@ class Stack {
 			}
 		}
 		int pop() {
-			if (top != 0) {
-				return arr[top];
+			if (size() != -1) {
+				return arr[top--];
 			} else {
 				std::cout << "Stack is empty." << std::endl;
 			}
 		}
 		bool isEmpty() {
-			if (size() == 0) {
+			if (top != -1) {
 				return true;
 			} else {
 				return false;
@@ -37,10 +39,19 @@ class Stack {
 };
 	
 int main() {
-	Stack A;
-	std::cout << "Input the size of array : ";
-	std::cin >> A.n;
-	A.push(5);
-	std::cout << A.pop() << std::endl;
+	int n;
+	std::cout << "Input the size of stack : ";
+	std::cin >> n;
+	Stack A(n);
+	int a;
+	while (A.top != n-1) {
+		std::cout << "Input number : ";
+		std::cin >> a;
+		A.push(a);
+	}
+	while (A.top != -1) {
+		std::cout << A.pop() << " "; 
+	}
+	std::cout << '\n';
 	return 0;
 }
