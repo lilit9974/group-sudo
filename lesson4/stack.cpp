@@ -2,18 +2,20 @@
 class Stack {
 	private:
 		int *arr;
-		int size() {
-			return top;
-		}
 	public:
 		int top;
 		unsigned int n;
+		int size() {
+			return top;
+		}
 		Stack(int n = 10) 
 			:n(n) {
 			top = -1;
 			arr = new int [n];
 		}
-		~Stack() {}
+		~Stack() {
+			delete []arr;
+		}
 		void push(int a) {
 			if (size() != n-1) {
 				arr[top] = a;
@@ -27,6 +29,7 @@ class Stack {
 				return arr[top--];
 			} else {
 				std::cout << "Stack is empty." << std::endl;
+				return 0;
 			}
 		}
 		bool isEmpty() {
