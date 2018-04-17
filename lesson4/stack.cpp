@@ -2,9 +2,21 @@
 class Stack {
 	private:
 		int *arr;
-	public:
 		int top;
 		unsigned int n;
+	public:
+		void setN(int n) {
+			this->n = n;
+		}
+		int getN() {
+			return n;
+		}
+		void setTop(int top) {
+			this->top = top;
+		}
+		int getTop() {
+			return top;
+		}
 		int size() {
 			return top;
 		}
@@ -47,12 +59,12 @@ int main() {
 	std::cin >> n;
 	Stack A(n);
 	int a;
-	while (A.top != n-1) {
+	while (A.size() != n-1) {
 		std::cout << "Input number : ";
 		std::cin >> a;
 		A.push(a);
 	}
-	while (A.top != -1) {
+	while (A.size() != -1) {
 		std::cout << A.pop() << " "; 
 	}
 	std::cout << '\n';
