@@ -11,49 +11,67 @@ class Point {
 			,y(P.y)
 		{}
 		~Point() {}
+        void setX(float x) {
+            this->x = x;
+        }
+        float getX() {
+            return x;
+        }
+        void setY(float y) {
+            this->y = y;
+        }
+        float getY() {
+            return y;
+        }
+
 };
 class Rectangle: public Point {
 	private:
-		float a, b;
+		Point a;
 	public:
-		Rectangle(float a=3, float b=3)
-			:a(a)
-			,b(b) {
-			Point(0, 0);
-			Point(a, 0);
-			Point(a, b);
-			Point(0, b);
-		}
+		Rectangle(Point a,Point b)
+			:Point(b)
+			{
+		    this->a = a;
+        }
 		~Rectangle() {}
-		void set_A(float a) {
+		void set_A(Point a) {
 			this->a = a;
 		}
-		void set_B(float b) {
-			this->b = b;
-		}
-		float get_A() {
+		Point get_A() {
 			return a;
 		}
-		float get_B() {
-			return b;
-		}
-		float Rectangle_S(float a, float b) {
-			return a * b;
-		}
-		float Rectangle_P(float a, float b) {
-			return 2 * (a + b);
+        float lenght() {
+            return a.getX() - Point::getX();
+        }
+        float hight() {
+            return a.getY() - Point::getY();
+        }
+		float Rectangle_S() {
+			return lenght() * hight();
+    	}
+		float Rectangle_P() {
+			return 2 * (lenght() + hight());
 		}
 };
 
 int main() {
-	Rectangle R;
 	std::cout << "Input a : ";
 	float a;
 	std::cin >> a;
 	std::cout << "Input b : ";
 	float b;
 	std::cin >> b;
-	std::cout << "S = " << R.Rectangle_S(a, b) << std::endl;
-	std::cout << "P = " << R.Rectangle_P(a, b) << std::endl;
+    Point p(a, b);
+	std::cout << "Input c : ";
+	float c;
+	std::cin >> c;
+	std::cout << "Input d : ";
+	float d;
+	std::cin >> d;
+    Point pp(c,d);
+	Rectangle R(p,pp);
+	std::cout << "S = " << R.Rectangle_S() << std::endl;
+	std::cout << "P = " << R.Rectangle_P() << std::endl;
 	return 0;
 }
