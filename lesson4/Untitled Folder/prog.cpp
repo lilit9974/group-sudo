@@ -45,3 +45,10 @@ class Circle {
             return  r * a;
         }
 };
+
+int main() {
+	Circle C("Lilit", 1, 2, 3);
+	std::cout << "L = " << C.Circle_L(3) << std::endl;
+	std::cout << "S = " << C.Circle_S(3) << std::endl;
+	return 0;
+}

@@ -1,30 +1,6 @@
 #include <iostream>
-class Point {
-	protected: 
-		float x, y;
-	public:
-		Point(float x=0, float y=0)  
-			:x(x)
-			,y(y) {}
-		Point(const Point& P) 
-			:x(P.x)
-			,y(P.y)
-		{}
-		~Point() {}
-        void setX(float x) {
-            this->x = x;
-        }
-        float getX() {
-            return x;
-        }
-        void setY(float y) {
-            this->y = y;
-        }
-        float getY() {
-            return y;
-        }
+#include "POINT.cpp"
 
-};
 class Rectangle: public Point {
 	private:
 		Point a;
@@ -34,6 +10,8 @@ class Rectangle: public Point {
 			{
 		    this->a = a;
         }
+		Rectangle(const Rectangle& r)
+			:a(r.a) {}
 		~Rectangle() {}
 		void set_A(Point a) {
 			this->a = a;

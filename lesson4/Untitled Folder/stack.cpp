@@ -41,15 +41,13 @@ class Stack {
 				return arr[top--];
 			} else {
 				std::cout << "Stack is empty." << std::endl;
-				return 0;
+		//		return 0;
 			}
 		}
 		bool isEmpty() {
 			if (top != -1) {
 				return true;
-			} else {
-				return false;
-			}
+			}; 
 		}
 };
 	
