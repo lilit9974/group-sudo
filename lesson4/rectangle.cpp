@@ -20,10 +20,10 @@ class Rectangle: public Point {
 			return a;
 		}
         float lenght() {
-            return a.getX() - Point::getX();
+            return a.get_X() - Point::get_X();
         }
         float hight() {
-            return a.getY() - Point::getY();
+            return a.get_Y() - Point::get_Y();
         }
 		float Rectangle_S() {
 			return lenght() * hight();

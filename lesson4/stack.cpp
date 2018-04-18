@@ -5,16 +5,16 @@ class Stack {
 		int top;
 		unsigned int n;
 	public:
-		void setN(int n) {
+		void set_N(int n) {
 			this->n = n;
 		}
-		int getN() {
+		int get_N() {
 			return n;
 		}
-		void setTop(int top) {
+		void set_Top(int top) {
 			this->top = top;
 		}
-		int getTop() {
+		int get_Top() {
 			return top;
 		}
 		int size() {
@@ -39,9 +39,6 @@ class Stack {
 		int pop() {
 			if (size() != -1) {
 				return arr[top--];
-			} else {
-				std::cout << "Stack is empty." << std::endl;
-		//		return 0;
 			}
 		}
 		bool isEmpty() {

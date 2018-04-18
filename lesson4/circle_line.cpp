@@ -12,14 +12,14 @@ class Circle: public Point {
 			this->r = r;
 		}
         	~Circle() {}
-        	void setR(Point r) {
+        	void set_R(Point r) {
             		this->r = r;
         	}
-        	Point getR() {
+        	Point get_R() {
             		return r;
         	}
 		float R() {
-			return sqrt(pow(r.getX() - Point::getX(), 2) + pow(r.getY() - Point::getY(), 2));
+			return sqrt(pow(r.get_X() - Point::get_X(), 2) + pow(r.get_Y() - Point::get_Y(), 2));
 		}
 		float get_L() {
             		return 2 * M_PI * R();
@@ -46,12 +46,12 @@ class Line: public Point {
             		return a;
         	}
         	float line_L() {
-			return sqrt(pow(a.getX() - Point::getX(), 2) + pow(a.getY() - Point::getY(), 2));
+			return sqrt(pow(a.get_X() - Point::get_X(), 2) + pow(a.get_Y() - Point::get_Y(), 2));
         	}
 		void foo() {
-			float k = (a.getY() - Point::getY()) / (a.getX() - Point::getX());
-			float b = (Point::getY() - Point::getX()) * k;
-			for (int x = Point::getX(); x < a.getX(); ++x) {
+			float k = (a.get_Y() - Point::get_Y()) / (a.get_X() - Point::get_X());
+			float b = (Point::get_Y() - Point::get_X()) * k;
+			for (int x = Point::get_X(); x < a.get_X(); ++x) {
 				std::cout << "x = " << x << " ";
 				std::cout << "y = " << k * x + b << std::endl;
 	}

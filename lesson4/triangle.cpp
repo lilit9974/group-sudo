@@ -30,13 +30,13 @@ class Triangle: public Point {
                         	return b;
                 	}
 			float AB() {
-				return sqrt(pow(a.getX() - b.getX(), 2) + pow(a.getY() - b.getY(), 2)); 
+				return sqrt(pow(a.get_X() - b.get_X(), 2) + pow(a.get_Y() - b.get_Y(), 2)); 
 			}
 			float BC() {
-				return sqrt(pow(b.getX() - Point::getX(), 2) + pow(b.getY() - Point::getY(), 2)); 
+				return sqrt(pow(b.get_X() - Point::get_X(), 2) + pow(b.get_Y() - Point::get_Y(), 2)); 
 			}
 			float AC() {
-				return sqrt(pow(a.getX() - Point::getX(), 2) + pow(a.getY() - Point::getY(), 2)); 
+				return sqrt(pow(a.get_X() - Point::get_X(), 2) + pow(a.get_Y() - Point::get_Y(), 2)); 
 			}
 			float Triangle_S() {
 				float p = (AB() + BC() + AC()) / 2;

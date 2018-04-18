@@ -10,29 +10,29 @@ class Circle {
         Circle(char* name = "Lilit", float x = 0, float y = 0, unsigned r = 5)
             : name(name), x(x), y(y), r(r) {}
         ~Circle() {}
-        float getX() {
+        float get_X() {
             return x;
         }
-        float getY() {
+        float get_Y() {
             return y;
         }
-        unsigned int getR() {
+        unsigned int get_R() {
             return r;
         }
 
-        char getName() {
+        char get_Name() {
             return *name;
         }
-        void setX(float x) {
+        void set_X(float x) {
             this->x = x;
         }
-        void setY(float y) {
+        void set_Y(float y) {
             this->y= y;
         }
-        void setR(unsigned int r) {
+        void set_R(unsigned int r) {
             this->r = r;
         }
-        void setName(char* name) {
+        void set_Name(char* name) {
             (*this).name = name;
         }
         float Circle_L(unsigned int r) {
