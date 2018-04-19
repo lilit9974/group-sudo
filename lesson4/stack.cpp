@@ -30,8 +30,7 @@ class Stack {
 		}
 		void push(int a) {
 			if (size() != n-1) {
-				arr[top] = a;
-				top++;
+				arr[++top] = a;
 			} else {
 				std::cout << "Stack is full." << std::endl;
 			}
