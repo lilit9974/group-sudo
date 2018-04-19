@@ -8,16 +8,16 @@ class Point {
 			,y(y)
 		{}
 		~Point() {}
-	void set_X(int x) {
+	void setX(int x) {
                         this->x = x;
                 }
-                Point get_X() {
+                Point getX() {
                         return x;
                 }
-	void set_Y(int y) {
+	void setY(int y) {
                         this->y = y;
                 }
-                Point get_Y() {
+                Point getY() {
                         return y;
                 }
         void foo() {
@@ -37,10 +37,10 @@ class Rectangle: public Point {
 			this->a = a;
 			}
 		~Rectangle() {}
-		void set_A(Point a) {
+		void setA(Point a) {
                         this->a = a;
                 }
-                Point get_A() {
+                Point getA() {
                         return a;
                 }
 

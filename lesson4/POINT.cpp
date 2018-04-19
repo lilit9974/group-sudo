@@ -12,16 +12,16 @@ class Point {
                         ,y(P.y)
                 {}
                 ~Point() {}
-        void set_X(float x) {
+        void setX(float x) {
             this->x = x;
         }
-        float get_X() {
+        float getX() {
             return x;
         }
-        void set_Y(float y) {
+        void setY(float y) {
             this->y = y;
         }
-        float get_Y() {
+        float getY() {
             return y;
         }
 

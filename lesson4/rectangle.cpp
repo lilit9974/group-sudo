@@ -13,17 +13,17 @@ class Rectangle: public Point {
 		Rectangle(const Rectangle& r)
 			:a(r.a) {}
 		~Rectangle() {}
-		void set_A(Point a) {
+		void setA(Point a) {
 			this->a = a;
 		}
-		Point get_A() {
+		Point getA() {
 			return a;
 		}
         float lenght() {
-            return a.get_X() - Point::get_X();
+            return a.getX() - Point::getX();
         }
         float hight() {
-            return a.get_Y() - Point::get_Y();
+            return a.getY() - Point::getY();
         }
 		float Rectangle_S() {
 			return lenght() * hight();
