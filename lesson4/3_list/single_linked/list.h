@@ -1,19 +1,29 @@
-struct Node {
-	int _value;
-	int *_next;
-};
+#ifndef LIST
+#define LIST
+
 class List {
 	private:
-	unsigned int lenght = 0;
-	Node* _head;
-	Node* _tail;
+		struct Node {
+		int _value;
+		int *_next;
+		};
+		unsigned int _size;
+		Node* _head;
+		Node* _tail;
+		void* shiftTo(unsigned int&);
 	public:
-	List() {};
-	~List() {};
-	int lenght;
-	void insert(int _value);
-	void remove(int _value);
-	int find(int _value);
-	int& operator[](int i);
+		List();
+		List(const List&);
+		~List();
+		int& operator[](unsigned int);
+		void insert(int, unsigned int);
+		void pushFront(int _value);
+		void pushEnd(int _value);
+		void remove(unsigned int);
+		int popFront();
+		int popEnd();
+		int find(int);
+		int deleteEl(void*);	
 };
-	
+
+#endif
