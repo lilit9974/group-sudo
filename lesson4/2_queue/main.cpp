@@ -6,6 +6,10 @@ int main() {
 	q.enqueue(10);
 	q.enqueue(20);
 	q.enqueue(30);
-	std::cout << q.dequeue() << " " << q.dequeue() << " " << q.dequeue() << std::endl;
+	q.dequeue();
+	q.print();
+	std::cout << std::endl;
+	std::cout << "Lenght of vector = "  << q.get_lenght() << std::endl;
 	return 0;
+
 }
