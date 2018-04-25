@@ -6,7 +6,7 @@ int main() {
 	std::cout << "Vector." << std::endl;
 	int a = 1;
 	for (int i=0; i<7; ++i) {
-		v[i] == a;
+		v[i] = a;
 		a++;
 	}
 	v.print();
