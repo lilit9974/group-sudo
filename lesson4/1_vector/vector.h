@@ -1,3 +1,6 @@
+#ifndef VECTOR
+#define VECTOR
+
 class Vector {
     private:
 	unsigned int _lenght;
@@ -15,3 +18,5 @@ class Vector {
 	void erace(unsigned int);
 	void print();
 };
+
+#endif
