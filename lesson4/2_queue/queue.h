@@ -1,3 +1,6 @@
+#ifndef QUEUE
+#define QUEUE
+
 class Queue {
 	private:
 		const unsigned int _size;
@@ -17,3 +20,4 @@ class Queue {
 		void print();
 };
 
+#endif
