@@ -10,7 +10,7 @@ class Vector {
 	Vector(const Vector&);
 	~Vector();
 	int& operator[](unsigned int);
-	unsigned int get_lenght();
+	unsigned int getLenght();
         void insert(unsigned int, int);
 	void remove(unsigned int);
 	int resize(unsigned int);

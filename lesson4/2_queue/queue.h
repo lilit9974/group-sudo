@@ -12,7 +12,7 @@ class Queue {
 		Queue(unsigned int =7);
 		Queue(Queue&);
 		~Queue();
-		unsigned int get_lenght();
+		unsigned int getLenght();
 		void enqueue(int);
 		int dequeue();
 		bool isEmpty();

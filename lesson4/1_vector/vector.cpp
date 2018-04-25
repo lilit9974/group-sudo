@@ -20,14 +20,18 @@ Vector::~Vector() {
 
 int& Vector::operator[](unsigned int index) {
 	int a = -1;
+	if (index == _lenght) {
+		std::cout << "Error!" << std::endl;
+		return a;
+	}
 	if (index > _lenght) {
 		std::cout << "Error: Index isn't true" << std::endl;
 		return a;
 	}
 	return _arr[index];
-}
+	}
 
-unsigned int Vector::get_lenght() {
+unsigned int Vector::getLenght() {
 	return _lenght;
 }
 

@@ -17,18 +17,18 @@ Queue::Queue( Queue& queue)
 	,_tail(queue._tail)
 	{
 	_arr = new int[_size];
-	unsigned int i = _head;
-	while(i == _tail) {
+	unsigned int i = _arr[_head];
+	do {
 		_arr[i] = queue._arr[i];
 		i = (i+1) % _size;
-	}
+	} while (i != _tail);
 }
 
 Queue::~Queue() {
 	delete []_arr;
 }
 
-unsigned int Queue::get_lenght() {
+unsigned int Queue::getLenght() {
 	return _lenght;
 }
 
@@ -44,7 +44,7 @@ void Queue::enqueue(int a) {
 	if(!isFull()) {
 		_arr[_tail] = a;
 		++_lenght;
-		_tail = (_tail + 1) & _size;
+		_tail = (_tail + 1) % _size;
 	} else { 
 		std::cout << "Error: Queue is full." << std::endl;
 	}

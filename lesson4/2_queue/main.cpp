@@ -9,7 +9,7 @@ int main() {
 	q.dequeue();
 	q.print();
 	std::cout << std::endl;
-	std::cout << "Lenght of vector = "  << q.get_lenght() << std::endl;
+	std::cout << "Lenght of vector = "  << q.getLenght() << std::endl;
 	return 0;
 
 }
