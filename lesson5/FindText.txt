@@ -1,0 +1,16 @@
+Finding text
+	cd /home/Desktop
+	mkdir find
+	cd find
+	mkdir dir1 dir2 dir3
+	cd dir1
+	touch file1.txt file2.txt
+	cd ../dir2
+	touch file3.txt file4.txt
+	cd ../dir3
+	touch file5.txt
+	mkdir dir4
+	cd dir4
+	touch file6.txt file7.txt
+	cd ../../
+	grep Hi -r find | sort > sort.txt

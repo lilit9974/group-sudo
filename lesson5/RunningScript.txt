@@ -1,0 +1,8 @@
+Running scripts from another directory
+	cd workspace
+	touch script.sh
+	vim script.sh
+		#!/bin/bash/
+		echo "Hello world!"
+	cd ../../
+	cd /home/lilit/workspace/ ; sh script.sh

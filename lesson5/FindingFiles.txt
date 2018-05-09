@@ -1,0 +1,13 @@
+Finding .txt and .odt files
+	cd workspace
+	mkdir part1 part2
+	cd part1
+	mkdir test1
+	cd test1
+	touch 1.txt 2.txt 3.odt
+	cd ../../part2
+	mkdir test2
+	cd test2
+	touch 4.odt 5.txt
+	cd ../../../
+	find /home/lilit/workspace/ -type f -regex ".*\.\(txt\|odt\)"

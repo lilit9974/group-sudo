@@ -1,0 +1,30 @@
+New users and groups
+	useradd user1
+	sudo passwd user1
+	useradd user2
+	sudo passwd user2
+	useradd user3
+	sudo passwd user3
+	groupadd group1
+	groupadd group2
+	groupadd group3
+	sudo gpasswd -a user1 group1
+	sudo gpasswd -a user2 group1
+	sudo gpasswd -a user2 group2
+	sudo gpasswd -a user3 group2
+	sudo gpasswd -a user1 group3
+	sudo gpasswd -a user2 group3
+	sudo gpasswd -a user3 group3
+	sudo chown user1:group1 /workspace/lilit
+	sudo chmod g+rwx /workspace/lilit
+	sudo chmod o+rw /workspace/lilit
+	sudo chmod o-x /workspace/lilit
+	ls -l
+	cat /etc/group | grep user1
+	sudo gruopdel group1
+	sudo groupdel group2
+	sudo groupdel group3
+	sudo userdel user1
+	sudo userdel user2
+	sudo userdel user3
+

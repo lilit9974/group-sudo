@@ -1,0 +1,10 @@
+Run levels
+	who -r
+	telinit 6
+	sudo id:4:initdefault:
+	init6
+	apt-get install sysv-rc-conf
+	sysv-rc-conf
+	sudo vim /etc/init/rc-sysinit.conf
+	nv DEFAULT_RUNLEVEL=4
+	reboot
